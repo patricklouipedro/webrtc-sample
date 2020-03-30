@@ -8,7 +8,7 @@ const Routes: React.FunctionComponent = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/room" component={Room} />
+        <Route path="/room/:id?" component={Room} />
       </Switch>
     </BrowserRouter>
   );

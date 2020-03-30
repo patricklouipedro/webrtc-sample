@@ -1,0 +1,11 @@
+.button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  padding: 15px 10px;
+}
+
+.button-block {
+  width: 100%;
+}

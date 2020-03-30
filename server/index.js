@@ -2,7 +2,10 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
+const http = require('http');
+
 const routes = require('./src/api');
+const io = require('./src/socket');
 
 const PORT = 8080;
 
@@ -15,4 +18,7 @@ app.use(logger('dev'));
 
 app.use('/api', routes);
 
-app.listen(PORT, () => console.log(`LISTENING ON PORT ${PORT}`));
+const server = http.createServer(app);
+io.init(server);
+
+server.listen(PORT, () => console.log(`LISTENING ON PORT ${PORT}`));

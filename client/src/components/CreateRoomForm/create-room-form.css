@@ -1,0 +1,14 @@
+.create-room-form {
+  display: inline-block;
+  min-width: 500px;
+}
+
+.create-room-form form {
+  display: block;
+  padding: 10% 10%;
+  position: relative;
+}
+
+.submit-container {
+  margin-top: 20px;
+}
